@@ -1,9 +1,24 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@App/*": [
+        "src/*"
+      ],
+      "@Components/*": [
+        "src/components/*"
+      ],
+      "@Store/*": [
+        "src/store/*"
+      ],
+      "@Reducers/*": [
+        "src/store/reducers"
+      ]
+    },
     "outDir": "build/dist",
     "module": "esnext",
     "target": "es5",
-    "lib": ["es6", "dom"],
+    "lib": ["es2017", "dom"],
     "sourceMap": true,
     "allowJs": true,
     "jsx": "react",

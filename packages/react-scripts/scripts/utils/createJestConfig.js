@@ -38,7 +38,7 @@ module.exports = (resolve, rootDir) => {
       ),
     },
     transformIgnorePatterns: [
-      '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|ts|tsx)$'
+      '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|ts|tsx)$',
     ],
     moduleNameMapper: {
       '^react-native$': 'react-native-web',
@@ -67,6 +67,7 @@ module.exports = (resolve, rootDir) => {
   }
   const overrides = Object.assign({}, require(paths.appPackageJson).jest);
   const supportedKeys = [
+    'moduleNameMapper',
     'collectCoverageFrom',
     'coverageReporters',
     'coverageThreshold',
