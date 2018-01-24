@@ -26,11 +26,8 @@ module.exports = function(
   originalDirectory,
   template
 ) {
-  const ownPackageName = require(path.join(
-    __dirname,
-    '..',
-    'package.json'
-  )).name;
+  const ownPackageName = require(path.join(__dirname, '..', 'package.json'))
+    .name;
   const ownPath = path.join(appPath, 'node_modules', ownPackageName);
   const appPackage = require(path.join(appPath, 'package.json'));
   const useYarn = fs.existsSync(path.join(appPath, 'yarn.lock'));
@@ -44,6 +41,16 @@ module.exports = function(
     build: 'react-scripts-ts build',
     test: 'react-scripts-ts test --env=jsdom',
     eject: 'react-scripts-ts eject',
+  };
+
+  appPackage.jest = {
+    moduleNameMapper: {
+      '^react-native$': 'react-native-web',
+      '@App/(.*)': '<rootDir>/src/$1',
+      '@Reducers/(.*)': '<rootDir>/src/store/reducers',
+      '@Store/(.*)': '<rootDir>/src/store/$1',
+      '@Components/(.*)': '<rootDir>/src/components/$1',
+    },
   };
 
   fs.writeFileSync(
@@ -110,6 +117,11 @@ module.exports = function(
     '@types/react-dom',
     '@types/jest',
     'typescript',
+    '@types/history',
+    '@types/react-dom',
+    '@types/react-redux',
+    '@types/redux',
+    '@types/redux-thunk',
   ];
 
   console.log(
@@ -213,6 +225,8 @@ module.exports = function(
 function isReactInstalled(appPackage) {
   const dependencies = appPackage.dependencies || {};
 
-  return typeof dependencies.react !== 'undefined' &&
-    typeof dependencies['react-dom'] !== 'undefined';
+  return (
+    typeof dependencies.react !== 'undefined' &&
+    typeof dependencies['react-dom'] !== 'undefined'
+  );
 }
