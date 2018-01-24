@@ -1,4 +1,4 @@
-# `react-scripts-ts` [![npm version](https://badge.fury.io/js/react-scripts-redux-ts.svg)](https://badge.fury.io/js/react-scripts-redux-ts) [![Build Status](https://travis-ci.org/wmonk/create-react-app-typescript.svg?branch=master)](https://travis-ci.org/wmonk/create-react-app-typescript)
+# `react-scripts-ts` [![npm version](https://badge.fury.io/js/react-scripts-redux-ts.svg)](https://badge.fury.io/js/react-scripts-redux-ts) [![Build Status](https://travis-ci.org/diabelb/create-react-app-typescript-redux.svg?branch=master)](https://travis-ci.org/diabelb/create-react-app-typescript-redux)
 
 Create React apps (with Typescript and Redux) with no build configuration.
 
