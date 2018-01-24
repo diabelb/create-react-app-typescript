@@ -1,14 +1,14 @@
 {
-  "name": "react-scripts-ts",
-  "version": "2.13.0",
+  "name": "react-scripts-redux-ts",
+  "version": "1.0.0",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "wmonk/create-react-app",
+  "repository": "diabelb/create-react-app-typescript-redux",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/wmonk/create-react-app/issues"
+    "url": "https://github.com/diabelb/create-react-app-typescript-redux/issues"
   },
   "files": [
     "bin",
