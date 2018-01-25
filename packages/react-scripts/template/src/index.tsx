@@ -5,11 +5,6 @@ import './index.css';
 import configureStore from '@App/store';
 import { Provider } from 'react-redux';
 import App from '@App/components/app/App';
-let values = require('object.values');
-
-if (!Object.values) {
-  values.shim();
-}
 
 let store = configureStore();
 
