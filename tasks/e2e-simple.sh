@@ -284,18 +284,18 @@ function verify_module_scope {
   echo "{}" >> sample.json
 
   # Save App.js, we're going to modify it
-  cp src/App.tsx src/App.tsx.bak
+  cp src/components/app/App.tsx src/components/app/App.tsx.bak
 
   # Add an out of scope import
-  echo "import sampleJson from '../sample.json'" | cat - src/App.tsx > src/App.tsx.temp && mv src/App.tsx.temp src/App.tsx
+  echo "import sampleJson from '../sample.json'" | cat - src/components/app/App.tsx > src/components/app/App.tsx.temp && mv src/components/app/App.tsx.temp src/components/app/App.tsx
 
   # Make sure the build fails
   npm run build; test $? -eq 1 || exit 1
   # TODO: check for error message
 
   # Restore App.tsx
-  rm src/App.tsx
-  mv src/App.tsx.bak src/App.tsx
+  rm src/components/app/App.tsx
+  mv src/components/app/App.tsx.bak src/components/app/App.tsx
 }
 
 # Enter the app directory
