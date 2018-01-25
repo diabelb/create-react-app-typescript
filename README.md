@@ -20,7 +20,7 @@ npm start
 ## Changelog
 
 ### 1.0.5
-* Added action, reducer and reducer test example
+* Added action, reducer and reducer's test example
 
 ### 1.0.4
 * Fixed problems with tests and dependencies
