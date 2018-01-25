@@ -18,14 +18,14 @@ describe('Counter Reducer', () => {
 
   it('should add 3 when passed ADD action with 3 value', () => {
 
-    //Given
+    // Given
     const initialCounterState = 0;
     const action = counterActions.add(3);
 
-    //When
+    // When
     const newState = counterReducer(initialCounterState, action);
 
-    //Then
+    // Then
     expect(newState).toEqual(3);
 
   });
