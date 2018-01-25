@@ -1,5 +1,6 @@
 import { RouterState } from 'connected-react-router';
 
 export default {
-  router: { } as RouterState
+  router: { } as RouterState,
+  counter: 0
 };

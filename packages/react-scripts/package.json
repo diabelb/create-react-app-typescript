@@ -1,6 +1,6 @@
 {
   "name": "react-scripts-redux-ts",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Configuration and scripts for Create React App.",
   "repository": "diabelb/create-react-app-typescript-redux",
   "license": "BSD-3-Clause",
@@ -23,10 +23,7 @@
   "jest": {
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
-      "@App/(.*)": "<rootDir>/src/$1",
-      "@Reducers/(.*)": "<rootDir>/src/store/reducers",
-      "@Store/(.*)": "<rootDir>/src/store/$1",
-      "@Components/(.*)": "<rootDir>/src/components/$1"
+      "@App/(.*)": "<rootDir>/src/$1"
     }
   },
   "dependencies": {

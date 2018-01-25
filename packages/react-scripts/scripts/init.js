@@ -47,9 +47,6 @@ module.exports = function(
     moduleNameMapper: {
       '^react-native$': 'react-native-web',
       '@App/(.*)': '<rootDir>/src/$1',
-      '@Reducers/(.*)': '<rootDir>/src/store/reducers',
-      '@Store/(.*)': '<rootDir>/src/store/$1',
-      '@Components/(.*)': '<rootDir>/src/components/$1',
     },
   };
 

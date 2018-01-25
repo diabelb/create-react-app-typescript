@@ -2,7 +2,7 @@ import { applyMiddleware, compose, createStore, GenericStoreEnhancer } from 'red
 import createBrowserHistory from 'history/createBrowserHistory';
 import { connectRouter, routerMiddleware } from 'connected-react-router';
 import thunk from 'redux-thunk';
-import { rootReducer, RootState } from '@Reducers/*';
+import { rootReducer, RootState } from '@App/store/reducers';
 
 declare global {
   interface Window {
