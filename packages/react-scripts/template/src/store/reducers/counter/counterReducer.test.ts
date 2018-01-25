@@ -4,14 +4,14 @@ import { counterActions } from '@App/store/actions/counter/counterActions';
 describe('Counter Reducer', () => {
   it('should add 1 when passed ADD action with 1 value', () => {
 
-    //Given
+    // Given
     const initialCounterState = 0;
     const action = counterActions.add(1);
 
-    //When
+    // When
     const newState = counterReducer(initialCounterState, action);
 
-    //Then
+    // Then
     expect(newState).toEqual(1);
 
   });
