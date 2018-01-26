@@ -1,5 +1,7 @@
 # `react-scripts-redux-ts` [![npm version](https://badge.fury.io/js/react-scripts-redux-ts.svg)](https://badge.fury.io/js/react-scripts-redux-ts) [![Build Status](https://travis-ci.org/diabelb/create-react-app-typescript-redux.svg?branch=master)](https://travis-ci.org/diabelb/create-react-app-typescript-redux)
 
+![Setup](https://thumbs.gfycat.com/BlueFrightenedBlackbird-size_restricted.gif)
+
 Create React apps (with Typescript and Redux) with no build configuration.
 
  * [Getting Started](#tldr) – How to create a new app.
@@ -7,7 +9,7 @@ Create React apps (with Typescript and Redux) with no build configuration.
 
 _Do you know react and want to try out typescript? Or do you know typescript and want to try out react?_ Get all the benefits from `create-react-app` but you use typescript! 🚀
 
-## tl;dr
+## Setup
 
 ```sh
 npm install -g create-react-app
