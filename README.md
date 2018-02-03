@@ -21,6 +21,9 @@ npm start
 
 ## Changelog
 
+### 1.1.0
+* Added css modules support
+
 ### 1.0.5
 * Added action, reducer and reducer's test example
 
