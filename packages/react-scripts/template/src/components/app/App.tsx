@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './App.css';
+import * as css from './App.css';
 import { ConnectedRouter } from 'connected-react-router';
 import { history } from '@App/store';
 import { RootState } from '@App/store/reducers';
@@ -37,16 +37,16 @@ class App extends React.Component<AppProps, AppState> {
   public render() {
     return (
       <ConnectedRouter history={history}>
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo"/>
-            <h1 className="App-title">Welcome to React</h1>
+        <div className={css.App}>
+          <header className={css.appHeader}>
+            <img src={logo} className={css.appLogo} alt="logo"/>
+            <h1 className={css.appTitle}>Welcome to React</h1>
           </header>
-          <p className="App-intro">
+          <p className={css.appIntro}>
             To get started, edit <code>src/app/App.tsx</code> and save to reload.
           </p>
-          <button className="button" onClick={this.onButtonClick}>Click to test ACTION</button>
-          <span className="counter">{this.props.counter}</span>
+          <button className={css.button} onClick={this.onButtonClick}>Click to test ACTION</button>
+          <span className={css.counter}>{this.props.counter}</span>
         </div>
       </ConnectedRouter>
     );

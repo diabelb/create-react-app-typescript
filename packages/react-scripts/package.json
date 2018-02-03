@@ -1,6 +1,6 @@
 {
   "name": "react-scripts-redux-ts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Configuration and scripts for Create React App.",
   "repository": "diabelb/create-react-app-typescript-redux",
   "license": "BSD-3-Clause",
@@ -73,7 +73,8 @@
     "@types/react-redux": "^5.0.14",
     "@types/redux": "^3.6.0",
     "@types/redux-thunk": "^2.1.0",
-    "typescript": "^2.6.2"
+    "typescript": "^2.6.2",
+    "typings-for-css-modules-loader": "^1.7.0"
   },
   "peerDependencies": {
     "typescript": "2.x"
