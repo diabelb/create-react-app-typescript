@@ -11,12 +11,19 @@ _Do you know react and want to try out typescript? Or do you know typescript and
 
 ## Setup
 
+Install create-react-app
 ```sh
-npm install -g create-react-app
+$ npm install -g create-react-app
+```
+Run react-scripts-redux-ts installation
+```sh
+$ create-react-app my-app --scripts-version=react-scripts-redux-ts
+```
 
-create-react-app my-app --scripts-version=react-scripts-redux-ts
-cd my-app/
-npm start
+Run my-app
+```sh
+$ cd my-app/
+$ npm start
 ```
 
 ## Changelog
