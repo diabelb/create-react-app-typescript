@@ -21,8 +21,8 @@ npm start
 
 ## Changelog
 
-### 1.1.0
-* Added css modules support
+### 1.1.1
+* Added support for CSS Modules using the explicit file naming convention [name].module.css
 
 ### 1.0.5
 * Added action, reducer and reducer's test example
