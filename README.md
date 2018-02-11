@@ -6,6 +6,7 @@ Create React apps (with Typescript and Redux) with no build configuration.
 
  * [Getting Started](#tldr) – How to create a new app.
  * [User Guide](https://github.com/wmonk/create-react-app-typescript/blob/master/packages/react-scripts/template/README.md) – How to develop apps bootstrapped with react scripts ts.
+ * [Redux Actions with Typescript](https://github.com/piotrwitek/react-redux-typescript-guide) - How to create redux actions and reducers in Typescript
 
 _Do you know react and want to try out typescript? Or do you know typescript and want to try out react?_ Get all the benefits from `create-react-app` but you use typescript! 🚀
 
@@ -25,8 +26,8 @@ Run my-app
 $ cd my-app/
 $ npm start
 ```
-## Generators
-### Component
+## Code Generators
+#### Component
 You can easily generate 3 types of component - stateful, stateful-redux and stateless.
 
 Just run command:
@@ -45,7 +46,7 @@ Loaded templates: _templates
        added: src/components/test/Test.tsx
        added: src/__tests__/components/test/Test.test.tsx
 ```
-### Redux store
+#### Redux store
 To generate redux store item just run:
 
 ```sh
