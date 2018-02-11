@@ -25,8 +25,56 @@ Run my-app
 $ cd my-app/
 $ npm start
 ```
+## Generators
+### Component
+You can easily generate 3 types of component - stateful, stateful-redux and stateless.
+
+Just run command:
+```sh
+$ npm run create:component
+```
+Answer simple questions:
+```sh
+? What's your component name? test/Test
+? What's your component type? stateful-redux
+```
+
+And done ;)
+```sh
+Loaded templates: _templates
+       added: src/components/test/Test.tsx
+       added: src/__tests__/components/test/Test.test.tsx
+```
+### Redux store
+To generate redux store item just run:
+
+```sh
+npm run store:create:item
+```
+
+and answer question:
+```sh
+? What's your store item's name? user
+```
+
+it'll create and update several files
+```sh
+Loaded templates: _templates
+       added: src/store/actions/user/userActions.ts
+      inject: src/store/actions/index.ts
+      inject: src/store/actions/index.ts
+       added: src/store/reducers/user/userReducer.ts
+      inject: src/store/reducers/index.ts
+      inject: src/store/reducers/index.ts
+      inject: src/store/reducers/index.ts
+       added: src/__tests__/store/reducers/user/userReducer.test.ts
+      inject: src/store/reducers/initialState.ts
+```
 
 ## Changelog
+
+### 1.1.3
+* Added component and redux store generators
 
 ### 1.1.1
 * Added support for CSS Modules using the explicit file naming convention [name].module.css
