@@ -27,7 +27,7 @@ $ cd my-app/
 $ npm start
 ```
 ## Code Generators
-#### Component
+#### Component generator
 You can easily generate 3 types of component - stateful, stateful-redux and stateless.
 
 Just run command:
@@ -46,7 +46,7 @@ Loaded templates: _templates
        added: src/components/test/Test.tsx
        added: src/__tests__/components/test/Test.test.tsx
 ```
-#### Redux store
+#### Redux store item generator
 To generate redux store item just run:
 
 ```sh
