@@ -74,7 +74,7 @@ Loaded templates: _templates
 
 ## Changelog
 
-### 1.1.3
+### 1.2.0
 * Added component and redux store generators
 
 ### 1.1.1
