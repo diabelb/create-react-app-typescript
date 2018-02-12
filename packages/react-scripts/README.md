@@ -50,7 +50,7 @@ Loaded templates: _templates
 To generate redux store item just run:
 
 ```sh
-npm run store:create:item
+npm run create:store:item
 ```
 
 and answer question:
@@ -74,7 +74,7 @@ Loaded templates: _templates
 
 ## Changelog
 
-### 1.2.0
+### 1.2.1
 * Added component and redux store generators
 
 ### 1.1.1

@@ -41,9 +41,8 @@ module.exports = function(
     build: 'react-scripts-ts build',
     test: 'react-scripts-ts test --env=jsdom',
     eject: 'react-scripts-ts eject',
-    'component:create': './node_modules/hygen/lib/bin.js component create',
-    'store:create:item': './node_modules/hygen/lib/bin.js store create'
-
+    'create:component': './node_modules/hygen/lib/bin.js component create',
+    'create:store:item': './node_modules/hygen/lib/bin.js store create',
   };
 
   appPackage.jest = {
